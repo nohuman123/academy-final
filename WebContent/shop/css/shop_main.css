@@ -1,0 +1,123 @@
+@charset "UTF-8";
+#shop_main .shop_main_form{
+	height: auto;
+}
+#shop_main .page-header{
+    margin: 0;
+    border-bottom-color: white;
+    padding-bottom: 0%;
+    margin-top: -3%;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+#shop_main .page-header .btn_more{
+	font-size: smaller;
+    border-style: none;
+    font-weight: bold;
+    color: darkgray;
+    margin-left: 1%;
+}
+#shop_main .thumbnail .btn_detail{
+    font-size: medium;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_main .shop_main_item1{
+	border-top: 1px solid darkgray;
+	height: auto;
+	margin-top: 1%;
+}
+#shop_main .shop_main_item2{
+	border-top: 1px solid darkgray;
+	height: auto;
+	margin-top: 1%;
+}
+#shop_main .shop_main_item3{
+	border-top: 1px solid darkgray;
+	height: auto;
+	margin-top: 1%;
+}
+#shop_main .shop_main_item4{
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	height: auto;
+	margin-top: 1%;
+}
+#shop_main .thumbnail{
+	position: relative;
+	margin-top: 12%;
+	margin-left: 6%;
+}
+#shop_main #item_thumbnail{
+	display: -webkit-box;
+	position: relative;
+	margin-top: -7%;
+	width: 63%;
+}
+#shop_main #item_thumbnail .thumbnail #item_photo{
+	height: 210px;
+}
+#shop_main span{
+	font-size: large;
+}
+#shop_main #item_information{
+	text-align: center;
+}
+@media(max-width: 1100px){
+	#shop_main .thumbnail:last-child{ 
+	    display: none;
+	}
+	#shop_main .thumbnail{
+        width: 122%;
+	}
+}
+@media(max-width: 991px){
+	#shop_main .thumbnail{
+        width: 77%;
+ }
+}
+@media(max-width: 850px){
+	#shop_main .thumbnail:nth-last-child(5n+0){ 
+	    display: none;
+	}
+	#shop_main .thumbnail{
+        width: 107%;
+    }
+}
+@media(max-width: 767px){
+	#shop_main .thumbnail:nth-last-child(4n+0){
+        display: none;
+	}
+	#shop_main .thumbnail{
+        width: 74%;
+    }
+}
+@media(max-width: 500px){
+	#shop_main .thumbnail{
+        display: inline-flex;
+	}
+	#shop_main .thumbnail:nth-last-child(4n+0){
+        display: inline-flex;
+	}
+	#shop_main .thumbnail:nth-last-child(5n+0){ 
+	    display: inline-flex;
+	}
+	#shop_main .thumbnail:last-child{ 
+	    display: inline-flex;
+	}
+	#shop_main .thumbnail{
+        width: 100%;
+    }
+}
+#shop_main .page-header .btn_more:hover, #shop_main .page-header .btn_more:focus, #shop_main .page-header .btn_more:visited, #shop_main .page-header .btn_more:active{
+	background-color: white;
+	border-style: none;
+	color: black;
+}
+#shop_main .btn_detail:hover, #shop_main .btn_detail:focus{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}

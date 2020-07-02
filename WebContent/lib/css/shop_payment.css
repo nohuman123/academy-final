@@ -1,0 +1,738 @@
+@charset "UTF-8";
+#shop_payment .shop_payment_frm{
+	height: auto;
+}
+#shop_payment .shop_payment_frm .page-header{
+	border-bottom: 1px solid white;
+	text-decoration: underline;
+	text-decoration-color: red;
+	margin: 0;
+}
+#shop_payment .shop_payment_frm #item_payment{
+	border: 1px solid darkgray;
+}
+#shop_payment .item_title{
+	font-size: 200%;
+	font-weight: bold;
+	margin-left: 26%;
+}
+#shop_payment .shop_payment_frm #item{
+	height: auto;
+	border: 1px solid darkgray;
+	margin: 1%;
+}
+#shop_payment .shop_payment_frm .item_photo{
+	position: relative;
+	width: 55%;
+	margin: 1%;
+}
+#shop_payment .shop_payment_frm .item_information{
+	font-size: 200%;
+	margin-top: 3%;
+}
+#shop_payment .shop_payment_frm .item_information #item_price{
+	margin-left: 11%;
+}
+#shop_payment .shop_payment_frm .item_information #item_num{
+	margin-left: 29%;
+}
+#shop_payment .shop_payment_tot{
+	height: auto;
+}
+#shop_payment .shop_payment_information{
+	border: 1px solid darkgray;
+	margin-top: 1%;
+}
+#shop_payment #order_information{
+	font-size: 215%;
+	border-bottom: 1px solid darkgray;
+	text-align: center;
+}
+#shop_payment #orderer{
+	font-size: 150%;
+}
+#shop_payment #orderer_text{
+	width: 120%;
+    margin-left: -35%;
+}
+#shop_payment #ordererPhone{
+	font-size: 150%;
+    margin-left: -30%;
+}
+#shop_payment #ordererPhone_text{
+	width: 145%;
+    margin-left: -43%;
+}
+#shop_payment .orderAddress_frm{
+	margin-top: 1%;
+}
+#shop_payment #orderAddress{
+	font-size: 150%;
+}
+#shop_payment #orderAddress_text{
+	width: 110%;
+    margin-left: -9%;
+    margin-top: 1%;
+}
+#shop_payment .reciever_frm{
+	margin-top: 1%;
+	margin-bottom: 1%
+}
+#shop_payment #reciever{
+	font-size: 150%;
+}
+#shop_payment #reciever_text{
+	width: 120%;
+    margin-left: -35%;
+}
+#shop_payment #recieverPhone{
+	font-size: 150%;
+    margin-left: -30%;
+}
+#shop_payment #recieverPhone_text{
+	width: 145%;
+    margin-left: -43%;
+}
+#shop_payment .shop_payment_mathod{
+	border: 1px solid darkgray;
+	margin-top: 1%;}
+#shop_payment #mathod{
+	font-size: 215%;
+	text-align: center;
+	border-bottom: 1px solid darkgray;
+}
+#shop_payment #card{
+	margin-left: 20%;
+	font-size: 170%;
+	text-align: center;
+}
+#shop_payment .btnCard{
+	border-style: none;
+	background-color: white;
+	color: darkgray;
+}
+#shop_payment #transfer{
+	font-size: 170%;
+	margin-left: 20%;
+}
+#shop_payment .btnTransfer{
+	border-style: none;
+	background-color: white;
+	color: darkgray;
+}
+#shop_payment #payment{
+	font-size: 170%;
+	margin-left: 28%;
+}
+#shop_payment #money{
+	font-size: 170%;
+	margin-left: 30%;
+}
+#shop_payment .shop_payment_final .payment{
+	position: relative;
+	border-style: none;
+	text-decoration: underline;
+	text-decoration-color: darkgray;
+	font-size: 220%;
+}
+#shop_payment .shop_payment_final .cancel{
+	position: relative;
+	border-style: none;
+	text-decoration: underline;
+	text-decoration-color: darkgray;
+	font-size: 220%;
+}
+@media(max-width: 1292px){
+	#shop_payment #ordererPhone_text{
+        width: 140%;
+        margin-left: -37%;
+    }
+	#shop_payment #recieverPhone_text{
+        width: 140%;
+        margin-left: -37%;
+	}
+}
+@media(max-width: 1240px){
+	#shop_payment #payment{
+        margin-left: 25%;
+	}
+}
+@media(max-width: 1216px){
+	#shop_payment #orderer_text{
+        width: 119%;
+        margin-left: -30%;
+    }
+	#shop_payment #ordererPhone_text{
+        margin-left: -34%;
+        width: 136%;
+    }
+	#shop_payment #orderAddress_text{
+        width: 109%;
+        margin-left: -8%;
+    }
+	#shop_payment #reciever_text{
+        width: 119%;
+        margin-left: -30%;
+    }
+	#shop_payment #recieverPhone_text{
+        width: 136%;
+        margin-left: -34%;
+	}
+	#shop_payment #mathod{
+        margin-left: -5%;
+    }
+	#shop_payment #payment{
+        margin-left: 25%;
+	}
+	#shop_payment #money{
+		margin-left: 20%;
+	}
+}
+@media(max-width: 1202px){
+	#shop_payment #payment{
+        margin-left: 20%;
+    }
+}
+@media(max-width: 1174px){
+	#shop_payment #ordererPhone_text{
+        margin-left: -30%;
+        width: 132%;
+    }
+    #shop_payment #recieverPhone_text{
+        width: 132%;
+        margin-left: -30%;
+ }
+	#shop_payment #mathod{
+		margin-left: -10%
+	}
+}
+@media(max-width: 1145px){
+	#shop_payment #mathod{
+		margin-left: -15%;
+	}
+	#shop_payment #payment{
+        margin-left: 15%;
+	}
+}
+@media(max-width: 1098px){
+	#shop_payment #orderer_text{
+        width: 115%;
+        margin-left: -25%;
+    }
+	#shop_payment #ordererPhone_text{
+        width: 128%;
+        margin-left: -26%;
+    }
+	#shop_payment #orderAddress_text{
+        width: 107%;
+        margin-left: -6%;
+	}
+	#shop_payment #reciever_text{
+        width: 115%;
+        margin-left: -25%;
+    }
+	#shop_payment #recieverPhone_text{
+        width: 128%;
+        margin-left: -26%;
+	}
+	#shop_payment #mathod{
+        margin-left: -20%;
+	}
+	#shop_payment #payment{
+        margin-left: 10%;
+    }
+	#shop_payment #money{
+        margin-left: 10%;
+	}
+}
+@media(max-width: 1074px){
+	#shop_payment #orderer{
+        font-size: 130%;
+    }
+	#shop_payment #ordererPhone{
+        font-size: 130%;
+    }
+	#shop_payment #ordererPhone_text{
+        width: 133%;
+        margin-left: -30%;
+    }
+	#shop_payment #orderAddress{
+        font-size: 130%;
+    }
+	#shop_payment #reciever{
+        font-size: 130%;
+    }
+	#shop_payment #recieverPhone{
+        font-size: 130%;
+    }
+	#shop_payment #recieverPhone_text{
+        width: 133%;
+        margin-left: -30%;
+	}
+}
+@media(max-width: 1062px){
+	#shop_payment #mathod{
+        margin-left: -25%;
+	}
+}
+@media(max-width: 1050px){
+	#shop_payment #payment{
+        margin-left: 5%;
+    }
+}
+@media(max-width: 1030px){
+	#shop_payment #mathod{
+        margin-left: -30%;
+    }
+}
+@media(max-width: 1010px){
+	#shop_payment #payment{
+        margin-left: 0%;
+    }
+    #shop_payment #money{
+        margin-left: 0%;
+    }
+}
+@media(max-width: 1002px){
+	#shop_payment #mathod{
+        margin-left: -35%;
+    }
+}
+@media(max-width: 982px){
+	#shop_payment #orderer{
+        font-size: 130%;
+        margin-left: -5%;
+    }
+	#shop_payment #ordererPhone{
+        font-size: 130%;
+        margin-left: -35%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -5%;
+    }
+	#shop_payment #reciever{
+        margin-left: -5%;
+    }
+	#shop_payment #recieverPhone{
+        margin-left: -35%;
+    }
+    #shop_payment .shop_payment_final .payment{
+        margin-left: -10%;
+    }
+}
+@media(max-width: 975px){
+	#shop_payment #mathod{
+        font-size: 200%;
+        margin-left: -30%;
+        font-weight: bold;
+	}
+	#shop_payment #payment{
+        margin-left: -5%;
+	}
+}
+@media(max-width: 975px){
+	#shop_payment #mathod{
+        font-size: 200%;
+        margin-left: -30%;
+        font-weight: bold;
+	}
+	#shop_payment #payment{
+        margin-left: -5%;
+	}
+}
+@media(max-width: 955px){
+	#shop_payment #orderer{
+        margin-left: -10%;
+    }
+	#shop_payment #orderer_text{
+        width: 110%;
+    }
+	#shop_payment #ordererPhone{
+        margin-left: -40%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -10%;
+    }
+	#shop_payment #reciever{
+        margin-left: -10%;
+    }
+	#shop_payment #reciever_text{
+        width: 110%;
+    }
+	#shop_payment #recieverPhone{
+        margin-left: -40%;
+    }
+    #shop_payment #mathod{
+        font-size: 180%;
+        margin-left: -20%;
+    }
+}
+@media(max-width: 945px){
+	#shop_payment #card{
+        font-size: 150%;
+        font-weight: bold;
+	}
+	#shop_payment #transfer{
+        font-size: 150%;
+        font-weight: bold;
+    }
+	#shop_payment #payment{
+        font-size: 150%;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+}
+@media(max-width: 936px){
+	#shop_payment #mathod{
+        margin-left: -30%;
+	}
+	#shop_payment #money{
+        margin-left: -10%;
+	}
+	#shop_payment .shop_payment_final .payment{
+        margin-left: -20%;
+	}
+}
+@media(max-width: 928px){
+	#shop_payment #order_information{
+        margin-left: -10%;
+	}
+	#shop_payment #orderer{
+        margin-left: -15%;
+    }
+	#shop_payment #ordererPhone{
+        margin-left: -45%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -15%;
+    }
+	#shop_payment #reciever{
+        margin-left: -15%;
+    }
+	#shop_payment #recieverPhone{
+        margin-left: -45%;
+	}
+	#shop_payment #payment{
+        margin-left: 0%;
+	}
+}
+@media(max-width: 906px){
+	#shop_payment #orderer{
+        font-size: 120%;
+        font-weight: bold;
+    }
+	#shop_payment #ordererPhone{
+        font-size: 120%;
+        font-weight: bold;
+    }
+	#shop_payment #orderAddress{
+        font-size: 120%;
+        font-weight: bold;
+    }
+	#shop_payment #reciever{
+        font-size: 120%;
+        font-weight: bold;
+    }
+	#shop_payment #recieverPhone{
+        font-size: 120%;
+        font-weight: bold;
+	}
+}
+@media(max-width: 894px){
+	#shop_payment #payment{
+        margin-left: -5%;
+	}
+}
+@media(max-width: 886px){
+	#shop_payment #mathod{
+        font-size: 150%;
+        margin-left: -20%;
+    }
+	#shop_payment .shop_payment_final .payment{
+        margin-left: -30%;
+	}
+}
+@media(max-width: 878px){
+	#shop_payment #money{
+        margin-left: -20%;
+	}
+}
+@media(max-width: 866px){
+	#shop_payment #order_information{
+        font-size: 200%;
+        font-weight: bold;
+	}
+	#shop_payment #orderer{
+        margin-left: -20%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -20%;
+    }
+	#shop_payment #reciever{
+        margin-left: -20%;
+    }
+    #shop_payment #card{
+        font-size: 130%;
+    }
+    #shop_payment #transfer{
+        font-size: 130%;
+    }
+    #shop_payment #payment{
+        font-size: 130%;
+    }
+}
+@media(max-width: 847px){
+	#shop_payment #orderer{
+        font-size: 100%;
+    }
+    #shop_payment .orderer_frm{
+        margin-top: 1%;
+    }
+    #shop_payment #ordererPhone{
+        font-size: 100%;
+    }
+    #shop_payment .ordererPhone_frm{
+        margin-top: 1%;
+    }
+	#shop_payment #orderAddress{
+        font-size: 100%;
+    }
+    #shop_payment .orderAdress_frm{
+        margin-top: 2%;
+    }
+	#shop_payment #reciever{
+        font-size: 100%;
+    }
+    #shop_payment .reciever_frm{
+        margin-top: 2%;
+    }
+    #shop_payment #reciever_text{
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    #shop_payment #recieverPhone{
+        font-size: 100%;
+    }
+    #shop_payment .recieverPhone_frm{
+        margin-top: 2%;
+    }
+    #shop_payment #recieverPhone_text{
+        margin-top: 3%;
+    }
+    #shop_payment .shop_payment_final .payment{
+        margin-left: -40%;
+    }
+}
+@media(max-width: 828px){
+	#shop_payment #mathod{
+        margin-left: -30%;
+    }
+	#shop_payment #money{
+        font-size: 150%;
+	}
+}
+@media(max-width: 819px){
+	#shop_payment #order_information{
+        margin-left: -20%;
+	}
+	#shop_payment .shop_payment_final .payment{
+        margin-left: -50%;
+	}
+}
+@media(max-width: 788px){
+	#shop_payment #mathod{
+        margin-left: -40%;
+	}
+	#shop_payment #payment{
+        margin-left: -10%;
+	}
+	#shop_payment .shop_payment_final .payment{
+        margin-left: -60%;
+	}
+}
+@media(max-width: 771px){
+	#shop_payment #order_information{
+        margin-left: -30%;
+	}
+	#shop_payment #orderer{
+        margin-left: -30%;
+    }
+   	#shop_payment #ordererPhone{
+        margin-left: -50%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -30%;
+    }
+	#shop_payment #reciever{
+        margin-left: -30%;
+    }
+	#shop_payment #recieverPhone{
+        margin-left: -50%;
+	}
+	#shop_payment .btnCard{
+        margin-left: -40%;
+        margin-top: -30%;
+    }
+	#shop_payment .btnTransfer{
+        margin-left: -80%;
+        margin-top: -40%;
+	}
+}
+@media(max-width: 766px){
+	#shop_payment #card{
+        font-size: 120%;
+	}
+	#shop_payment #transfer{
+        font-size: 120%;
+    }
+	#shop_payment #payment{
+        font-size: 120%;
+    }
+    #shop_payment #money{  	
+        font-size: 120%;
+    }
+    #shop_payment .shop_payment_final .payment{
+        margin-left: -70%;
+    }
+}
+@media(max-width: 751px){
+	#shop_payment #mathod{
+        margin-left: -50%;
+	}
+}
+@media(max-width: 742px){
+	#shop_payment #orderer{
+        margin-left: -40%;
+    }
+	#shop_payment #orderAddress{
+        margin-left: -40%;
+    }
+	#shop_payment #reciever{
+        margin-left: -40%;
+	}
+}
+@media(max-width: 729px){
+	#shop_payment #order_information{
+        font-size: 150%;
+        margin-left: -10%;
+	}
+	#shop_payment #payment{
+        margin-left: -20%;
+	}
+}
+@media(max-width: 720px){
+	#shop_payment #mathod{
+        font-size: 130%;
+        margin-left: -40%;
+	}
+}
+@media(max-width: 718px){
+	#shop_payment .orderer_frm{
+	    width: 25%;
+	    margin-top: 2%;
+	    text-align: center;
+	    font-size: 120%;
+	}
+    #shop_payment #orderer_text{
+        width: 465%;
+        margin-left: -60%;
+        margin-top: 5%;
+    }
+    #shop_payment .ordererPhone_frm{
+        width: 46%;
+        text-align: center;
+        margin-top: 13%;
+        margin-left: -47%;
+        font-size: 120%;
+    }
+    #shop_payment #ordererPhone_text{
+        width: 250%;
+        margin-top: 48%;
+        margin-left: -80%;
+    }
+    #shop_payment .orderAdress_frm{
+        font-size: 120%;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    #shop_payment #orderAddress_text{
+        margin-left: 20%;
+        width: 103%;
+        margin-top: -10%;
+    }
+    #shop_payment .reciever_frm{
+        font-size: 120%;
+        width: 25%;
+        margin-top: 3%;
+        text-align: center;
+    }
+    #shop_payment #reciever_text{
+        width: 463%;
+        margin-left: -60%;
+        margin-top: 12%;
+    }
+    #shop_payment .recieverPhone_frm{
+        font-size: 120%;
+        width: 52%;
+        text-align: center;
+        margin-left: 2%;
+    }
+    #shop_payment #recieverPhone_text{
+        width: 250%;
+        margin-left: -97%;
+        margin-bottom: 5%;
+    }
+   #shop_payment .shop_payment_final{
+   	    margin-top: -18%;
+        margin-left: 69%;
+   }
+   #shop_payment .shop_payment_final .payment{
+        margin-left: 0%;
+   }
+   #shop_payment .shop_payment_final .cancel{
+        margin-top: 102%;
+        margin-left: -160%;
+   }
+}
+@media(max-width: 692px){
+	#shop_payment #orderer_text{
+        margin-left: -56%;
+	}
+	#shop_payment #reciever_text{
+        margin-left: -54%;
+    }
+	#shop_payment #payment{
+        width: 150%;
+        text-align: center;
+    }
+}
+@media(max-width: 689px){
+    #shop_payment .mathod_card_frm{
+        width: 70%;
+        margin-left: -10%;
+    }
+    #shop_payment .mathod_transfer_frm{
+        width: 70%;
+        margin-left: -10%;
+    }
+}
+#shop_payment .btnCard:hover, #shop_payment .btnCard:focus, #shop_payment .btnCard:visited, #shop_payment .btnCard:active{
+	background-color: white;
+	border-style: none;
+	color: red;
+}
+#shop_payment .btnTransfer:hover, #shop_payment .btnTransfer:focus, #shop_payment .btnTransfer:visited, #shop_payment .btnTransfer:active{
+	background-color: white;
+	border-style: none;
+	color: red;
+}
+#shop_payment .shop_payment_final .payment:hover, #shop_payment .shop_payment_final .payment:focus, #shop_payment .shop_payment_final .payment:visited, #shop_payment .shop_payment_final .payment:active {
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_payment .shop_payment_final .cancel:hover, #shop_payment .shop_payment_final .cancel:focus, #shop_payment .shop_payment_final .cancel:visited, #shop_payment .shop_payment_final .cancel:active {
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}

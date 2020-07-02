@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+#lol_body{
+	background-color: #5383e8;
+}
+
+#lol_body{
+	padding-top: 150px;
+}
+
+#lol_logo{
+	font-size:100px;
+	color:white;
+	font-weight: bold;
+}
+
+#findStr{
+    width: 700px;
+    height: 50px;
+}
+
+#lol_board_li{
+	background-color: white;
+    margin-top: 100px;
+    width: 800px;
+    height: 500px;
+}
+
+#top_con{
+	background-color: #5383e8;
+}
+
+#ls_body{
+	background-color: #E6E6E6;
+}
+
+#ls_logo{
+	color:white;
+	font-weight: bold;
+    font-size: 45px;
+}
+
+#ls_findStr{
+	margin-top: 15px;
+    width: 300px;
+    height: 35px;
+}
+#ls_level{
+	position: relative;
+    right: 67px;
+    top: 42px;
+    font-weight: bold;
+    color: white;
+    background-color: #2E64FE;
+    padding: 3px;
+}
+
+#ls_main{
+    margin-top: 30px;
+}
+
+#sum_id{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+}
+
+#ls_hr{
+    height: 1px;
+    background-color: #A4A4A4;
+}
+
+#ls_point{
+	color:#2E2E2E;
+	font-weight: bold;
+}
+
+#ls_tier{
+	width: 100px;
+}
+
+#ls_tierInfo{
+	color:#879292;
+}
+
+#rank_Info{
+	padding-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+	background-color: white;
+	border: 1px solid #D8D8D8;
+}
+#vs{
+	font-weight: bold;
+}
+
+#game_detail{
+	border: 1px solid black;
+}
+#game_history{
+	border:1px solid black;
+}
+
+#ls_reload{
+	position: relative;
+    right: 126px;
+    top: 30px;
+    border: 1px solid;
+    width: 128px;
+    height: 44px;
+    background-color: #2E64FE;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    border-radius: 5px;
+}
+
+#g_left{
+    margin-top: 20px;	
+}
+
+#kda{
+    font-size: 18px;
+    font-weight: bold;
+}
+#kda2{
+	font-size: 18px;
+	font-weight: bold;
+}
+#gd_img{
+    width: 80px;
+    position: relative;
+    right: 25px;
+}
+
+#gd_kda{
+    position: relative;
+    left: 25px;
+}
+
+#gd_imgs{
+    position: relative;
+    left: 30px;
+}
+#gd_ids{
+    line-height: 21px;
+    font-weight: bold;
+}

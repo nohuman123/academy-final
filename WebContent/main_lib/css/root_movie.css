@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+	background-color: #D8D8D8;
+}
+
+#logo{
+	width: 150px;
+}
+
+#logo:hover{
+	cursor:pointer;
+}
+
+#logo_t{
+	font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+#findStr{
+	width: 600px;
+    position: relative;
+    top: 8px;
+    height: 40px;
+    left: 10px;
+    border: 1px solid #BDBDBD;
+}
+
+#logo_t:hover{
+	cursor: pointer;
+}
+
+#movie_div{
+	background-color: white;
+	border: 1px solid #ACACAC;
+	padding: 30px;
+}
+
+#mv_sp{
+	font-weight: bold;
+}
+
+#mv_sub{
+	font-weight: bold;
+	padding-left: 40px;
+}
+
+#mv_des{
+	background-color: #D8D8D8;
+}
+
+#mv_title{
+	font-size: 30px;
+    padding-left: 20px;
+}

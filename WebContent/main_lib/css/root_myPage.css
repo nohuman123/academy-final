@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#logo{
+	width:150px;
+}
+
+#logo_span{
+	font-size: 24px;
+	font-weight: bold;
+	
+    position: relative;
+    top: 20px;
+	
+}
+
+#my_body{
+	background-color: #D8D8D8;
+}
+
+#my_info{
+	background-color:white;
+	border: 1px solid #BDBDBD;
+	padding: 50px;
+	font-size: 18px;
+	
+}
+
+#my_address{
+	background-color:white;
+	border: 1px solid #BDBDBD;
+	padding: 50px;
+	font-size: 18px;
+}
+
+#my_coupons{
+	background-color: white;
+	border: 1px solid #BDBDBD;
+	padding: 50px;
+	font-size: 18px;
+}
+
+#my_Btns{
+	margin-top: 25px;
+}
+
+#my_Btn{
+	background-color: white;
+	border:none;
+	
+}

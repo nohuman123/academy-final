@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#service_body{
+	background-image: url(../images/neon.jpg);
+	background-size: 100%;
+	
+}
+
+#service_span {
+	color:white;
+	font-size: 42px;
+	text-shadow: 0 0 3px black;
+}
+
+#service_wm{
+	color:#40FF00;
+	font-size: 42px;
+	text-shadow: 0 0 3px #FA5858;
+    font-weight: 600;
+}
+
+#service_top{
+	position: relative;
+	bottom:80px;
+}
+
+#serviceBtn1{
+	position: relative;
+    bottom: 80px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color: #ff0050;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#serviceBtn2{
+	position: relative;
+    bottom: 93px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color: #ff0050;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+#pinkbean{
+    position: relative;
+    left: 550px;
+    top: 50px;
+}
+}
+
+

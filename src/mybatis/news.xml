@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="news">
+	<!-- select -->
+	<select id="main_t_news_i" resultMap="mm_news">
+		select * from (select * from news_info order by nserial desc) where rownum &lt;= 9
+	</select>
+	<select id="main_t_news_p" resultType="newsController.NewsPhotoVo">
+		select * from (select * from news_photo where rowid in (select max(rowid) from news_photo group by nserial) order by nserial desc  ) where rownum &lt;= 9	
+	</select>
+	
+	<select id="main_cate_All" resultMap="mm_news">
+		select * from (select * from (select * from news_photo where rowid in (select max(rowid) from news_photo group by nserial) order by dbms_random.value) where rownum &lt;=4) a join news_info b on a.nserial = b.nserial
+	</select>
+	
+	<select id="main_cate_de" parameterType="String" resultMap="mm_news">
+		select * from (select * from news_photo where rowid in (select max(rowid) from news_photo group by nserial) order by nserial desc)a join news_info b on a.nserial = b.nserial where b.ncategory=#{value} and rownum &lt;= 4
+	</select>
+	
+	<select id="main_hit_desc" resultMap="mm_news">
+		select * from 
+			(select * from 
+				(select * from news_photo where rowid in 
+				 	(select max(rowid) 
+				 	 from news_photo group by nserial)
+				 )a join news_info b on a.nserial = b.nserial order by nhit desc
+			 ) where rownum &lt;=5
+	</select>
+	
+	<select id="detail_side" parameterType="String" resultType="newsController.NewsVo">
+		select * from 
+			(select * from 
+				(select * from news_photo where rowid in 
+				 	(select max(rowid) 
+				 	 from news_photo group by nserial)
+				 )a join news_info b on a.nserial = b.nserial where ncategory='${value}' order by nhit desc
+			 ) where rownum &lt;=5
+	</select>
+	
+	<select id="detailView" parameterType="String" resultMap="mm_news">
+		select * from (select * from news_photo where rowid in (select max(rowid) from news_photo group by nserial) order by nserial desc)a join news_info b on a.nserial = b.nserial where a.nSerial=#{value}
+	</select>
+	
+<!-- 	<select id="comment_List" parameterType="String" resultType="newsController.CommentVo">
+		select * from news_comment where nSerial=${value} order by cGroup desc, cStep asc
+	</select> -->
+	
+	<select id="comment_list" parameterType="newsController.Page" resultType="newsController.CommentVo">
+		 select * from ( 
+					select rownum rn , A.* from (
+					select * from news_comment
+					where nSerial = #{nSerial} and cIndent=0
+					order by cGroup desc, cStep asc ) A
+					) where rn between #{startNo} and #{endNo}
+	</select>
+	
+	<select id="comment_cnt" parameterType="String" resultType="String">
+		select count(*) from news_comment where nSerial=#{value} and cIndent=0
+	</select>
+	
+	<select id="comment_cnt_s" parameterType="String" resultType="int">
+		select count(*) from news_comment where nSerial=#{value} and cIndent=0
+	</select>
+	
+	<select id="re_comment_list" parameterType="String" resultType="newsController.CommentVo">
+		select * from news_comment where nSerial=${value} and cIndent=1 order by cGroup desc, cStep asc
+	</select>
+	
+	<select id="re_comment_li" parameterType="String" resultType="newsController.CommentVo">
+		select * from news_comment where nSerial=#{value} and cIndent=1 and ROWID in(select max(rowid) from news_comment group by cGroup) order by cGroup desc, cStep asc
+	</select>
+	
+	<select id="comment_rv" parameterType="newsController.CommentVo" resultType="newsController.CommentVo">
+		select count(*) cnt from news_comment where nSerial=#{nSerial} and cGroup=#{cGroup} and cIndent=1
+	</select>
+	
+	<select id="like_check" parameterType="newsController.LikeVo" resultType="int">
+		select count(likeNo) cnt from news_like where mName=#{mName} and cSerial=#{cSerial} and cLike=1
+	</select>
+	
+	<select id="un_like_check" parameterType="newsController.LikeVo" resultType="int">
+		select count(likeNo) cnt from news_like where mName=#{mName} and cSerial=#{cSerial} and cDiLike=1
+	</select>
+	
+	<select id="like_cnt" parameterType="newsController.LikeVo" resultType="String">
+		select cLike from news_comment where cSerial=#{cSerial}
+	</select>
+	
+	<select id="un_like_cnt" parameterType="newsController.LikeVo" resultType="String">
+		select cDiLike from news_comment where cSerial=#{cSerial}
+	</select>
+	
+	<select id="news_search_info" parameterType="newsController.Page" resultType="newsController.NewsVo">
+		select * from ( 
+			select rownum rn , A.* from (
+				select * from news_info
+				where nTitle like '%${findStr}%' or nContent like '%${findStr}%'
+			order by nDate desc ) A
+		) where rn between #{startNo} and #{endNo}	
+	</select>
+	
+	<select id="news_search_cnt" parameterType="newsController.Page" resultType="int">
+		select count(*) from news_info where nTitle like '%${findStr}%' or nContent like '%${findStr}%'
+	</select>
+	
+	<select id="news_search_photo" parameterType="int" resultType="newsController.NewsPhotoVo">
+		select * from(
+			select * from news_photo where rowid in (
+				select max(rowid) from news_photo group by nserial) 
+		)where nserial = #{value}
+	</select>
+	
+	<select id="like_ck_l" parameterType="String" resultType="newsController.LikeVo">
+		select * from news_like where mName = #{value} and cLike = 1
+	</select>
+	
+	<select id="like_ck_cl" parameterType="String" resultType="newsController.LikeVo">
+		select * from news_like where mName = #{value} and cDiLike = 1
+	</select>	
+	
+	
+	<!-- insert -->
+	<insert id='news_insert' parameterType="newsController.NewsVo">
+		insert into news_info values(seq_news_serial.nextval, #{nTitle}, #{nContent:VARCHAR}, #{nCompany}, sysdate, #{nRepoter}, #{nCategory}, 0, 0)
+	</insert>
+	
+	<insert id='news_photo_insert' parameterType="newsController.NewsPhotoVo">
+		insert into news_photo values(seq_nphoto_serial.nextval, seq_news_serial.currval, #{pName}, #{pContent}, #{flag})
+	</insert>
+	
+	<insert id="comment_insert" parameterType="newsController.CommentVo">
+		insert into news_comment values(seq_comment_serial.nextval, #{nSerial}, #{mName}, sysdate, #{cContent}, (select nvl(max(cGroup)+1, 1)from news_comment), 0,0,0,0)
+	</insert>
+	
+	<insert id="comment_re_insert" parameterType="newsController.CommentVo">
+		insert into news_comment values(seq_comment_serial.nextval, #{nSerial}, #{mName}, sysdate, #{cContent}, #{cGroup}, 1, 1, 0, 0)
+	</insert>
+	
+	<insert id="like_in" parameterType="newsController.LikeVo">
+		insert into news_like values(seq_like_serial.nextval, #{mName}, #{nSerial}, #{cSerial}, 1, 0)
+	</insert>
+	
+	<insert id="un_like_in" parameterType="newsController.LikeVo">
+		insert into news_like values(seq_like_serial.nextval, #{mName}, #{nSerial}, #{cSerial}, 0, 1)
+	</insert>
+
+	<!-- delete -->
+	
+	<delete id="comment_delete_s" parameterType="String">
+		delete from news_comment where cSerial=#{value}
+	</delete>
+	
+	<delete id="comment_delete" parameterType="String">
+		delete from news_comment where cGroup=#{value}
+	</delete>
+	
+	<delete id="like_delete" parameterType="newsController.LikeVo">
+		delete from news_like where mName=#{mName} and cSerial=#{cSerial}
+	</delete>
+	
+
+	
+<!-- 	<delete id="comment_delete" parameterType="String">
+		delete from news_comment where 
+	</delete> -->
+
+
+	<!-- update -->
+	<update id="like_in_update" parameterType="newsController.LikeVo">
+		update news_comment set cLike=cLike+1 where cSerial=#{cSerial} and nSerial=#{nSerial}
+	</update>
+	
+	<update id="like_out_update" parameterType="newsController.LikeVo">
+		update news_comment set cLike=cLike-1 where cSerial=#{cSerial} and nSerial=#{nSerial}
+	</update>
+	
+	<update id="un_like_in_update" parameterType="newsController.LikeVo">
+		update news_comment set cDiLike=cDiLike+1 where cSerial=#{cSerial} and nSerial=#{nSerial}
+	</update>
+	
+	<update id="un_like_out_update" parameterType="newsController.LikeVo">
+		update news_comment set cDiLike=cDiLike-1 where cSerial=#{cSerial} and nSerial=#{nSerial}
+	</update>
+	
+	<update id="up_hit" parameterType="String">
+		update news_info set nHit=nHit+1 where nSerial=#{value}
+	</update>
+	
+	<!-- resultMap -->
+	<resultMap id="mm_news" type="newsController.NewsVo">
+		<result column="nSerial" property="nSerial"/>
+		<result column="nContent" property="nContent" jdbcType="CLOB" javaType="java.lang.String"/>
+		<result column="nTitle" property="nTitle"/>
+		<result column="nCompany" property="nCompany"/>
+		<result column="nDate" property="nDate"/>
+		<result column="nRepoter" property="nRepoter"/>
+		<result column="nCategory" property="nCategory"/>
+		<result column="nLike" property="nLike"/>
+		<result column="nHit" property="nHit"/>
+		<collection property="photos" ofType="newsController.NewsPhotoVo">
+			<result column="pSerial" property="pSerial"/>
+			<result column="nSerial" property="nSerial"/>
+			<result column="pName" property="pName"/>
+			<result column="pContent" property="pContent"/>
+			<result column="flag" property="flag"/>
+		</collection>
+	</resultMap>
+
+</mapper>	

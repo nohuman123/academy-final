@@ -1,0 +1,819 @@
+@charset "UTF-8";
+#shop_myPage .member{
+	height: auto;
+}
+#shop_myPage .member_thumbnail {
+    width: 350%;
+    margin-top: 10%;
+    text-align: center;
+}
+#shop_myPage .member .btn_modify{
+    border-style: none;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+    padding: 0;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#ahop_myPage .modal-content .a{
+	height: auto;
+}
+#shop_myPage .modal-body .modal_member_photo_frm{
+    height: auto;
+    margin-bottom: 3%;
+}
+#shop_myPage .modal-body .modal_member_photo{
+    width: 70%;
+    margin: 1%;
+}
+#shop_myPage .modal-body .modal_member_photo_modify{
+    height: auto;
+    text-align: center;
+    margin-left: -10%;
+    margin-top: 7%;
+}
+#shop_myPage .modal-body .modal_member_photo_modify .btn_photo_modify{
+    font-size: 150%;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .modal-body .modal_member_photo_modify .btn_photo_remove{
+    font-size: 150%;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .modal-body .modal_member_information_title{
+    height: auto;
+    font-size: 140%;
+    text-align: center;
+    font-weight: bold;
+}
+#shop_myPage .modal-body .modal_member_information_title #member_id_frm{
+    margin-top: 2%;
+}
+#shop_myPage .modal-body .modal_member_information_title #member_name_frm{
+    margin-top: 26%;
+}
+#shop_myPage .modal-body .modal_member_information_title #member_phone_frm{
+    margin-top: 23%;
+}
+#shop_myPage .modal-body .modal_member_information_modify{
+    height: auto;
+}
+#shop_myPage .modal-body .modal_member_information_modify #member_name_text{
+    margin-top: 2%;
+}
+#shop_myPage .modal-body .modal_member_information_modify #member_phone_text{
+    margin-top: 2%;
+}
+#shop_myPage .modal-body .modal_member_information_title #member_address_frm{
+    margin-top: 20%;
+}
+#shop_myPage .modal-body .modal_member_information_modify #sample4_postcode{
+    margin-top: 3%;
+    width: 90%;
+}
+#shop_myPage .modal-body .modal_member_information_modify #btn_postcode{
+    margin-top: 13%;
+    font-size: large;
+    margin-left: -55%;
+    background-color: white;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .modal-body .modal_member_information_modify #sample4_roadAddress{
+    margin-top: 4%;
+    width: 105%;
+}
+#shop_myPage .modal-body .modal_member_information_modify #sample4_jibunAddress{
+    margin-top: 4%;
+    width: 105%;
+    margin-left: -4%;
+}
+#shop_myPage .modal-footer .btn_member_save{
+    font-size: 130%;
+    border-style: none;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .modal-footer .btn_member_delete{
+    font-size: 130%;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .modal-footer .btn_member_back{
+    font-size: 130%;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .myPage_buy{
+	border: 1px solid darkgrey;
+}
+#shop_myPage .buy_list{
+	margin: 0;
+	border-bottom-color: white;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+#shop_myPage .buy_list .page-header{
+	padding: 0;
+	margin: 0;
+	margin-top: -3%;
+	margin-bottom: -3%;
+	border-color: white;
+}
+#shop_myPage .buy_list .page-header .btn_buy_more{
+	font-size: smaller;
+    border-style: none;
+    font-weight: bold;
+    color: darkgray;
+    margin-left: 1%;
+}
+#shop_myPage .buy_list_name_title{
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+#shop_myPage .buy_list_price_title{
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+#shop_myPage .buy_list_status_title{
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+#shop_myPage .buy_list_item{
+	border-top: 1px solid darkgray;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#shop_myPage .buy{
+	border: 1px solid darkgray;
+	margin-bottom: 1%;
+}
+#shop_myPage .buy_photo{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#shop_myPage .buy_information{
+    margin-top: 3%;
+}
+#shop_myPage .buy_list_name{
+	font-size: 200%;
+	text-align: center;
+}
+#shop_myPage .buy_list_price{
+	font-size: 200%;
+	text-align: center;
+}
+#shop_myPage .buy_list_status{
+	font-size: 200%;
+	text-align: center;
+}
+#shop_myPage .myPage_like{
+	margin-top: 1%;
+	border: 1px solid darkgrey;
+}
+#shop_myPage .like_list{
+	margin: 0;
+	border-bottom-color: white;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+#shop_myPage .like_list .page-header{
+	padding: 0;
+	margin: 0;
+	margin-top: -3%;
+	border-color: white;
+}
+#shop_myPage .like_list .page-header .btn_like_more{
+	font-size: smaller;
+    border-style: none;
+    font-weight: bold;
+    color: darkgray;
+    margin-left: 1%;
+}
+#shop_myPage .like_item_list{
+    border-top: 1px solid darkgray;
+}
+#shop_myPage .like_item{
+	padding: 1%;
+}
+#shop_myPage .like_thumbnail{
+    width: 400%;
+    margin: 0;
+    text-align: center;
+}
+#shop_myPage .like_thumbnail .btn_like_remove{
+    font-size: 150%;
+    border-style: none;
+    color: darkgray;
+}
+#shop_myPage .like_thumbnail .btn_like_detail{
+    font-size: 150%;
+    border-style: none;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+    font-weight: bold;
+}
+@media(max-width: 1306px){
+	#shop_myPage .buy_list .page-header .btn_buy_more{
+        margin-left: 0;
+    }
+	#shop_myPage .like_list .page-header .btn_like_more{
+        margin-left: 0;
+	}
+}
+@media(max-width: 1304px){
+	#shop_myPage #item_price_title{
+        margin-left: -40%;
+    }
+	#shop_myPage #item_status_title {
+        margin-left: -60%;
+    }
+    #shop_myPage #buy_price{
+        margin-left: -37%;
+    }
+    #shop_myPage #buy_status{
+        margin-left: -45%;
+    }
+}
+@media(max-width: 1294px){
+	#shop_myPage .buy_list .page-header .btn_buy_more{
+        width: 30%;
+    }
+	#shop_myPage .like_list .page-header .btn_like_more{
+        width: 30%;
+    }
+}
+@media(max-width: 1200px){
+	#shop_myPage .buy_list .page-header .btn_buy_more{
+        width: 25%;
+    }
+	#shop_myPage .like_list .page-header .btn_like_more{
+        width: 25%;
+    }
+}
+@media(max-width: 1196px){
+    #shop_myPage .like_thumbnail .btn_like_detail{
+        margin-left: -3%;
+    }	
+}
+@media(max-width: 1178px){
+	#shop_myPage .member_thumbnail #member_id_frm{
+        width: 150%;
+        margin: 0;
+        padding-top: 10%;
+        padding-right: 37%;
+        padding-bottom: 5%;
+        margin-left: -5%;
+    }
+    #shop_myPage .like_thumbnail{
+        width: 445%;
+    }
+}
+@media(max-width: 1134px){
+	#shop_myPage .buy_list .page-header .btn_buy_more{
+        width: 10%;
+	}
+	#shop_myPage .like_list .page-header .btn_like_more{
+        width: 10%;
+    }
+}
+@media(max-width: 1034px){
+	#shop_myPage .buy_list .page-header #delivery_header{
+        width: 200%;
+	}
+	#shop_myPage .like_list .page-header #like_header{
+        width: 200%;
+    }
+	#shop_myPage .like_thumbnail{
+        margin-left: 1%;
+    }
+    #shop_myPage .like_thumbnail .btn_like_detail{
+        width: 92%;
+        margin-left: 0;
+    }
+    #shop_myPage .like_thumbnail .btn_like_remove{
+        margin-top: -51%;
+        margin-left: 110%;
+    }
+	#shop_myPage #like_item_first{
+        display: inline-flex;
+        height: 155px;
+    }
+	#shop_myPage #like_item_second{
+        display: inline-flex;
+        height: 155px;
+        margin-left: 511%;
+    }
+	#shop_myPage #like_item_third{
+        display: inline-flex;
+        height: 155px;
+        margin-top: 460%;
+        margin-left: -1021%;
+    }
+	#shop_myPage #like_item_forth{
+        display: inline-flex;
+        height: 15;
+        height: 155px;
+        margin-left: -509%;
+        margin-top: 460%;
+	}
+}
+@media(max-width: 991px){
+	#shop_myPage .member_frm{
+        width: 10%;
+	}
+	#shop_myPage .myPage_buy{
+        width: 75%;
+        margin-left: 27%;
+        margin-top: -30%;
+        height: 190px;
+    }
+	#shop_myPage .buy{
+        margin-top: -33%;
+    }
+	#shop_myPage .myPage_like{
+        margin-top: 9%;
+        width: 100%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+    }
+    #shop_myPage .like_thumbnail .btn_like_detail{
+        width: 50%;
+    }
+     #shop_myPage .like_thumbnail .btn_like_remove{
+        margin-top: 0;
+        margin-left: 0;
+    }
+	#shop_myPage #like_item_first{
+        display: block;
+        width: 240%;
+        height: auto;
+        margin-left: -4%;
+    }
+	#shop_myPage #like_item_second{
+        display: block;
+        width: 240%;
+        height: auto;
+        margin-left: -4%;
+    }
+	#shop_myPage #like_item_third{
+        display: block;
+        height: auto;
+        margin-top: 0;
+        margin-left: -3%;
+        width: 240%;
+    }
+	#shop_myPage #like_item_forth{
+        display: block;
+        width: 240%;
+        height: auto;
+        margin-top: 0;
+        margin-left: -3px;
+	}
+}
+@media(max-width: 970px){
+	#shop_myPage .buy_list_title{
+        font-size: 100%;
+        margin-left: -10%;
+    }
+    #shop_myPage .buy_list_item{
+        font-size: 75%;
+    }
+    #shop_myPage .buy_photo{
+        width: 100%;
+    }
+    #shop_myPage .buy_list_name{
+        margin-left: -5%;
+    }
+    #shop_myPage .buy_list_price{
+        margin-left: 3%;
+    }
+    #shop_myPage .buy_list_status{
+        margin-left: 1%;
+    }
+	#shop_myPage .like_thumbnail .btn_like_detail{
+        width: 60%;
+    }
+}
+@media(max-width: 890px){
+	#shop_myPage .buy{
+        margin-top: -30%;
+	}
+	#shop_myPage .buy_list_title{
+        font-size: 80%;
+	}
+	#shop_myPage .myPage_like{
+        margin-top: 7%;
+	}
+}
+@media(max-width: 855px){
+	#shop_myPage .like_thumbnail .btn_like_detail{
+        width: 70%;
+	}
+}
+@media(max-width: 836px){
+	#shop_myPage .like_thumbnail .btn_like_detail{
+        width: 65%;
+	}
+}
+@media(max-width: 808px){
+	#shop_myPage .like_thumbnail .btn_like_remove{		
+        margin-left: 3%;
+	}
+}
+@media(max-width: 802px){
+	#shop_myPage .like_thumbnail .btn_like_detail{
+        margin-left: -5%;
+        font-size: 120%;
+    }
+}
+@media(max-width: 780px){
+	#shop_myPage .myPage_buy{
+        height: 160px;
+	}
+	#shop_myPage .buy{
+        margin-top: -30%;
+	}
+	#shop_myPage .buy_list_title{		
+        margin-left: -15%;
+	}
+	#shop_myPage .buy_list_price_title{
+        margin-left: -5%;
+    }
+	#shop_myPage .buy_list_status_title{
+        margin-left: 1%;
+	}
+	#shop_myPage .buy_list_name{
+        margin-left: -7%;
+    }
+	#shop_myPage .buy_list_price{
+        margin-left: -3%;
+    }
+	#shop_myPage .buy_list_status{
+        margin-left: 5%;
+	}
+}
+@media(max-width: 768px){
+	#shop_myPage .member_thumbnail{
+        width: 435%;
+        margin-left: -15%;
+	}
+	#shop_myPage .myPage_buy {
+		height: 160px;
+		width: 73%;
+		margin-left: 28%;
+	}
+	#shop_myPage .buy {
+        margin-top: -1%;
+    }
+	#shop_myPage .buy_list_title {
+        margin-left: -18%;
+    }
+    #shop_myPage #like_item_first{
+        display: inline-flex;
+        width: 110%;
+        height: 150px;
+        margin-left: 1%;
+    }	
+    #shop_myPage #like_item_second{
+        display: flex;
+        width: 110%;
+        height: 150px;
+        margin-left: 112%;
+    }
+    #shop_myPage #like_item_third{
+        display: flex;
+        width: 110%;
+        height: 150px;
+        margin-top: 95%;
+        margin-left: -216%;
+    }
+    #shop_myPage #like_item_forth{
+        display: flex;
+        width: 110%;
+        height: 150px;
+        margin-top: 95%;
+        margin-left: -105%;
+    }
+    #shop_myPage .like_thumbnail .caption{
+        margin-top: -5%;
+    }
+    #shop_myPage .like_thumbnail .btn_like_detail{
+        width: 100%;
+    }
+    #shop_myPage .like_thumbnail .btn_like_remove{
+        margin-top: -63%;
+        margin-left: 94%;
+    }
+}
+@media(max-width: 756px){
+	#shop_myPage .buy_list_title{
+        font-size: 70%;
+        margin-left: -10%;
+	}
+	#shop_myPage .buy_information{
+        font-size: 80%;
+	}
+	#shop_myPage .buy_list_name{
+        margin-left: -3%;
+    }
+	#shop_myPage .buy_list_price{
+        margin-left: -5%;
+    }
+	#shop_myPage .buy_list_status{
+        margin-left: 2%;
+	}
+}
+@media(max-width: 744px){
+	#shop_myPage .buy_list_status_title{
+        width: 20%;
+        margin-left: 0%;
+	}
+}
+@media(max-width: 682px){
+	#shop_myPage .member_thumbnail{
+        width: 490%;
+	}
+	#shop_myPage .myPage_like{
+        margin-top: 5%;
+    }
+}
+@media(max-width: 646px){
+	#shop_myPage .member_thumbnail #member_id_frm{
+        font-size: 150%;
+	}
+	#shop_myPage .member .btn_modify{
+        font-size: 100%;
+	}
+	#shop_myPage .myPage_buy{
+        margin-top: -33%;
+	}
+	#shop_myPage .like_thumbnail .btn_like_remove{
+        margin-left: 90%;
+	}
+	#shop_myPage .buy_list .page-header #delivery_header{
+        font-size: 200%;
+	}
+}
+@media(max-width: 642px){
+	#shop_myPage .buy_list_status_title{
+        width: 21%;
+        margin-left: -2%;
+	}
+	#shop_myPage #like_item_third{
+        margin-top: 120%;
+    }
+	#shop_myPage #like_item_forth{
+        margin-top: 120%;
+    }
+    #shop_myPage .buy_list_status{
+		width: 22%;
+		margin-left: -1%;
+    }
+}
+@media(max-width: 631px){
+	#shop_myPage #like_item_second{
+        margin-left: 107%;
+    }
+	#shop_myPage #like_item_forth{
+        margin-left: -110%;
+	}
+}
+@media(max-width: 620px){
+	#shop_myPage .buy_list .page-header #delivery_header{
+        width: 300%;
+	}
+}
+@media(max-width: 618px){
+	#shop_myPage .member_thumbnail #member_id_frm{
+        font-size: 130%;
+	}
+	#shop_myPage .buy_list_title{
+        font-size: 65%;
+    }
+}
+@media(max-width: 606px){
+	#shop_myPage .modal-body .modal_member_information_title{
+        font-size: 130%;
+        margin-top: 1%;
+	}
+	#shop_myPage .like_thumbnail .caption{
+        margin-top: -20%;
+    }
+	#shop_myPage .like_thumbnail .btn_like_remove{
+        margin-top: -7%;
+        margin-left: 0%;
+	}
+}
+@media(max-width: 595px){
+	#shop_myPage .member_thumbnail{
+        width: 588%;
+        margin-left: -42%;
+	}
+	#shop_myPage .member .btn_modify{
+        padding: 0;
+	}
+	#shop_myPage .myPage_buy{
+        margin-top: -34%;
+        height: 140px;
+	}
+	#shop_myPage .buy_list_title{
+        width: 126%;
+        margin-left: -16%;
+	}
+	#shop_myPage .buy_list_name{
+        margin-left: -5%;
+    }   
+	#shop_myPage .buy_list_price{
+        margin-left: -2%;
+    }
+	#shop_myPage .buy_list_status{
+        margin-left: 0%;
+	}
+	#shop_myPage #like_item_third{
+        margin-top: 130%;
+	}
+	#shop_myPage #like_item_forth{
+        margin-top: 130%;
+    }
+}
+@media(max-width: 559px){
+	#shop_myPage .modal-body .modal_member_information_title{
+        font-size: 120%;
+	}
+	#shop_myPage .modal-body .modal_member_information_title #member_name_frm{
+        margin-top: 30%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_phone_frm{
+        margin-top: 30%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_address_frm{
+        margin-top: 40%;
+    }
+}
+@media(max-width: 555px){
+	#shop_myPage .member_thumbnail{
+        width: 655%;
+	}
+	#shop_myPage .member_thumbnail #member_id_frm{
+        font-size: 120%;
+	}
+	#shop_myPage .buy_list_title{
+        width: 130%;
+        margin-left: -20%;
+        font-size: 50%;
+	}
+	#shop_myPage .buy_list_name_title{
+        margin-left: 18%;
+	}
+	#shop_myPage .buy_list_price_title{
+        margin-left: -6%;
+    }
+    #shop_myPage .buy_list_status_title{
+        margin-left: -3%;
+    }
+	#shop_myPage .buy_list_item{
+        font-size: 60%;
+	}
+	#shop_myPage #like_item_third{
+        margin-top: 140%;
+	}
+	#shop_myPage #like_item_forth{
+        margin-top: 140%;
+    }
+}
+@media(max-width: 534px){
+	#shop_myPage .modal-body .modal_member_information_title{
+        font-size: 115%;
+	}
+	#shop_myPage .modal-body .modal_member_information_title #member_name_frm{
+        margin-top: 40%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_phone_frm{
+        margin-top: 40%;
+    }
+}
+@media(max-width: 527px){
+	#shop_myPage .buy_photo{
+        width: 190%;
+        margin-left: -25%;
+	}
+	#shop_myPage #like_item_third{
+        margin-top: 150%;
+    }
+	#shop_myPage #like_item_forth{
+        margin-top: 150%;
+    }
+}
+@media(max-width: 522px){
+	#shop_myPage .member_thumbnail #member_id_frm{
+        margin-left: -18%;
+        width: 180%;
+	}
+	#shop_myPage .member .btn_modify{
+        margin-left: -6%;
+	}
+	#shop_myPage .modal-body .modal_member_information_title{
+        font-size: 110%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_name_frm{
+        margin-top: 40%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_phone_frm{
+        margin-top: 40%;
+    }
+}
+@media(max-width: 500px){
+	#shop_myPage .member_thumbnail{
+        width: 786%;
+        margin-left: -73%;
+	}
+	#shop_myPage .myPage_buy{
+        margin-top: -40%;
+        margin-left: 27%;
+	}
+	#shop_myPage .modal-body .modal_member_information_title{
+        font-size: 105%;
+        margin-top: 2%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_name_frm{
+        margin-top: 40%;
+    }
+	#shop_myPage .modal-body .modal_member_information_title #member_phone_frm{
+        margin-top: 45%;
+    }
+}
+#shop_myPage .member .btn_modify:hover, #shop_myPage .member .btn_modify:focus, #shop_myPage .member .btn_modify:visited, #shop_myPage .member .btn_modify:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-body .modal_member_information_modify #btn_postcode:hover, #shop_myPage .member .btn_modify:focus, #shop_myPage .modal-body .modal_member_information_modify #btn_postcode:visited, #shop_myPage .modal-body .modal_member_information_modify #btn_postcode:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-body .modal_member_photo_modify .btn_photo_modify:hover, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_modify:focus, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_modify:visited, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_modify:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-body .modal_member_photo_modify .btn_photo_remove:hover, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_remove:focus, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_remove:visited, #shop_myPage .modal-body .modal_member_photo_modify .btn_photo_remove:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-footer .btn_member_save:hover, #shop_myPage .modal-footer .btn_member_save:focus, #shop_myPage .modal-footer .btn_member_save:visited, #shop_myPage .modal-footer .btn_member_save:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-footer .btn_member_delete:hover, #shop_myPage .modal-footer .btn_member_delete:focus, #shop_myPage .modal-footer .btn_member_delete:visited, #shop_myPage .modal-footer .btn_member_delete:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .modal-footer .btn_member_back:hover, #shop_myPage .modal-footer .btn_member_back:focus, #shop_myPage .modal-footer .btn_member_back:visited, #shop_myPage .modal-footer .btn_member_back:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_myPage .buy_list .btn_buy_more:hover, #shop_myPage .buy_list .btn_buy_more:focus, #shop_myPage .buy_list .btn_buy_more:visited, #shop_myPage .buy_list .btn_buy_more:active{
+	background-color: white;
+	border-style: none;
+	color: black;
+}
+#shop_myPage .like_list .btn_like_more:hover, #shop_myPage .like_list .btn_like_more:focus, #shop_myPage .like_list .btn_like_more:visited, #shop_myPage .like_list .btn_like_more:active{
+	background-color: white;
+	border-style: none;
+	color: black;
+}
+#shop_myPage .like_item_list .btn_like_remove:hover, #shop_myPage .like_item_list .btn_like_remove:focus, #shop_myPage .like_item_list .btn_like_remove:active{
+	background-color: white;
+	border-style: none;
+	color: red;
+}
+#shop_myPage .like_item_list .btn_like_detail:hover, .like_item_list .btn_like_detail:focus, #shop_myPage .like_list .btn_like_detail:visited, #shop_myPage .like_list .btn_like_detail:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}

@@ -1,0 +1,251 @@
+@charset "UTF-8";
+#shop_basket .shop_basket_frm{
+	height: auto;
+}
+#shop_basket .shop_basket_frm .page-header{
+	border-bottom: 1px solid white;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+#shop_basket .shop_basket_frm #item_basket{
+	border: 1px solid darkgray;
+}
+#shop_basket .item_title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 18%;
+}
+#shop_basket .shop_basket_frm #item{
+	border: 1px solid darkgray;
+	margin: 1%;
+}
+#shop_basket .shop_basket_frm .item_photo{
+	width: 70%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#shop_basket .item_information {
+    font-size: 200%;
+    margin-top: 2%;
+}
+
+#shop_basket .item_information #item_price {
+    margin-left: -11%;
+}
+#shop_basket .shop_basket_frm .btn_remove{
+	font-size: 130%;
+	border-style: none;
+	color: darkgray;
+	margin-top: -3%;
+	margin-left: -35%;
+}
+#shop_basket .shop_basket_tot{
+	height: auto;
+}
+#shop_basket .shop_totOrder{
+	height: auto;
+	display: grid;
+	border: 1px solid darkgray;
+	margin-top: 1%;
+}
+#shop_basket .shop_totOrder #totOrder{
+	font-size: 200%;
+	text-align: center;
+	border-bottom: 1px solid darkgray;
+	font-weight: bold;
+}
+#shop_basket .shop_totOrder #orderNum{
+	font-size: 180%;
+	text-align: center;
+}
+#shop_basket .shop_totPrice{
+	height: auto;
+	display: grid;
+	border: 1px solid darkgray;
+	margin-top: 1%;
+	left: 1%;
+}
+#shop_basket .shop_totPrice #totPrice{
+	font-size: 200%;
+	text-align: center;
+	border-bottom: 1px solid darkgray;
+	font-weight: bold;
+}
+#shop_basket .shop_totPrice #priceNum{
+	font-size: 180%;
+	text-align: center;
+}
+#shop_basket .shop_basket_payment{
+	width: 16%;
+	height: auto;
+	display: grid;
+	margin-top: 0.5%;
+}
+#shop_basket .shop_basket_payment .payment{
+	position: relative;
+	border-style: none;
+	text-decoration: underline;
+	text-decoration-color: darkgray;
+	font-size: 180%;
+}
+#shop_basket .shop_basket_payment .cancel{
+	position: relative;
+	top: -20%;
+	border-style: none;
+	text-decoration: underline;
+	text-decoration-color: darkgray;
+	font-size: 180%;
+}
+/* @media(max-width: 1023px){
+	#shop_basket .item_title{
+        font-size: x-large;
+	}
+	#shop_basket .item_information{
+        font-size: x-large;
+	}
+} */
+@media(max-width: 800px){
+	#shop_basket .item_title{
+        font-size: large;
+    }
+	#shop_basket .item_information{
+        font-size: large;
+     }
+     #shop_basket .shop_basket_frm .item_photo{
+     	width: 140%;
+     }
+     #shop_basket .shop_basket_frm .btn_remove{
+        font-size: large;
+        font-size: 130%;
+        margin-top: -10%
+     }
+     #shop_basket .shop_basket_frm .item_photo{
+     	width: 120%;
+     }
+	#shop_basket .item_title{
+		font-size: 150%;
+	}
+	#shop_basket .item_information{
+		font-size: 130%;
+	}
+	#shop_basket .shop_totOrder #totOrder{
+        font-size: 180%;
+        font-weight: bold;
+    }
+	#shop_basket .shop_totOrder #orderNum{
+        font-size: 140%;
+    }
+	#shop_basket .shop_totPrice #totPrice{
+        font-size: 180%;
+        font-weight: bold;
+    }
+    #shop_basket .shop_totPrice #priceNum{
+        font-size: 140%;
+    }
+    #shop_basket .shop_basket_payment .payment{
+    	font-size: 140%;
+ }
+	#shop_basket .shop_basket_payment .cancel{
+		font-size: 140%;
+	}
+}
+@media(max-width: 635px){
+	#shop_basket .item_title{
+        font-size: 130%;
+        margin-left: 18%;
+    }
+	#shop_basket .item_information{
+        font-size: 110%;
+        margin-top: 2%;
+        margin-left: 6%;
+     }
+     #shop_basket .shop_basket_frm .item_photo{
+     	width: 140%;
+     }
+     #shop_basket .shop_basket_frm .btn_remove{
+        font-size: large;
+        font-size: 130%;
+        margin-top: -20%
+     }
+     #shop_basket .shop_basket_frm .item_photo{
+     	width: 160%;
+     	margin-left: -25%;
+     }
+     #shop_basket .shop_totOrder #totOrder{
+        font-size: 150%;
+    }
+	#shop_basket .shop_totOrder #orderNum{
+        font-size: 140%;
+    }
+	#shop_basket .shop_totPrice #totPrice{
+        font-size: 150%;
+    }
+    #shop_basket .shop_totPrice #priceNum{
+        font-size: 140%;
+    }
+    #shop_basket .shop_basket_payment{
+        font-size: 85%;
+        left: -2%;
+        margin-top: 0%;
+    }
+}
+@media(max-width: 528px){
+	#shop_basket .item_title{
+        font-size: 120%;
+        margin-left: 16%;
+    }
+    #shop_basket .item_title #item_name_title{
+    	margin-left: 15%;
+    }
+	#shop_basket .shop_basket_frm .item_photo{
+     	width: 214%;
+     	margin-left: -50%;
+     }
+     #shop_basket .shop_basket_frm .btn_remove {
+     	font-size: 100%;
+    	margin-top: -20%;
+     }
+     #shop_basket .shop_totOrder #totOrder{
+        font-size: 130%;
+    }
+	#shop_basket .shop_totOrder #orderNum{
+        font-size: 110%;
+    }
+	#shop_basket .shop_totPrice #totPrice{
+        font-size: 130%;
+    }
+    #shop_basket .shop_totPrice #priceNum{
+        font-size: 110%;
+    }
+     #shop_basket .shop_basket_payment{
+        left: -3%;
+    }
+    #shop_basket .shop_basket_payment .payment{
+        font-size: 120%;
+    }
+    #shop_basket .shop_basket_payment .cancel{
+        font-size: 120%;
+    }
+}
+@media(max-width: 500px){
+	#shop_basket .item_title{
+        font-size: 115%;
+	}
+	#shop_basket .shop_basket_frm .item_photo{
+        width: 235%;
+	}
+}
+#shop_basket .shop_basket_frm .btn_remove:hover, #shop_basket .shop_basket_frm .btn_remove:focus, #shop_basket .shop_basket_frm .btn_remove:visited, #shop_basket .shop_basket_frm .btn_remove:active{
+	background-color: white;
+	color: red;
+}
+#shop_basket .shop_basket_payment .payment:hover, #shop_basket .shop_basket_payment .payment:focus, #shop_basket .shop_basket_payment .payment:visited, #shop_basket .shop_basket_payment .payment:active{
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}
+#shop_basket .shop_basket_payment .cancel:hover, #shop_basket .shop_basket_payment .cancel:focus, #shop_basket .shop_basket_payment .cancel:visited, #shop_basket .shop_basket_payment .cancel:active {
+	background-color: white;
+	border-style: none;
+	text-decoration-color: red;
+}

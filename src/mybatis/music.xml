@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="music">
+
+	<select id="home" resultType="mybatis.MusicVo">
+		select * from sb_music 
+		where MUSIC_SERIAL IN (
+			select MUSIC_SERIAL from SB_TOP where TOP_SERIAL BETWEEN 1 and 10
+		)
+	</select>
+	
+	<select id="top100" resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial
+		where MUSIC_SERIAL IN (
+			select MUSIC_SERIAL from SB_TOP where TOP_SERIAL BETWEEN 1 and 100
+		)
+	</select>
+	
+	<select id="info" parameterType="Integer" resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial
+		where music_serial = ${_parameter}
+	</select>
+	
+	<select id="movie" parameterType="Integer"  resultType="mybatis.MusicVo">
+		select * from sb_music 
+		where music_serial = ${_parameter}
+	</select>
+
+	<select id="play" parameterType="Integer"  resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial 
+		where MUSIC_SERIAL = ${_parameter}
+	</select>
+	
+	<select id="playList" parameterType="String" resultType="mybatis.MusicListVo">
+		select * from sb_playlist where mId = '${_parameter}'
+		
+	</select>
+	
+	
+	<select id="mL_music" parameterType="java.util.ArrayList" resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial
+		where music_serial in 
+		<foreach item="item" index="index" collection="array" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+	
+	<select id="pL_music" parameterType="Integer" resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial
+		where music_serial = #{_parameter}
+		
+		
+	</select>
+	
+	<select id="search" parameterType="String" resultType="mybatis.MusicVo">
+		select A.*, B.album_photo 
+		from sb_music A
+		join sb_album B
+		on a.album_serial = b.album_serial
+		where music_name LIKE '%' || #{_parameter} || '%'
+	
+	</select>
+	
+	<update id="addList" parameterType="mybatis.MusicListVo">
+		update sb_playlist set music_list = #{music_serial} ||
+		(select music_list from sb_playlist where mid=#{mId})
+		where mid=#{mId}
+	</update>
+	
+	<update id="delList" parameterType="mybatis.MusicListVo">
+		update sb_playlist 
+		set music_list = replace( (select music_list from SB_PLAYLIST where mid=#{mId}),'${music_serial},','' )
+		where mId =#{mId}
+	</update>
+	
+	<update id="change" parameterType = "mybatis.MusicListVo">
+		update sb_playlist
+		set music_list = #{music_list}
+		where mId = #{mId}
+		
+	</update>
+	
+	<update id="removeAll" parameterType ="String">
+		update sb_playlist
+		set music_list = ''
+		where mId = #{mId}
+		
+	</update>
+
+</mapper>

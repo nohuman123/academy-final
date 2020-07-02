@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="shop">
+	<select id="item_more_select" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select I.item_name, I.item_price, I.item_main_photo, C.category_name, I.item_id
+		from shop_item I join shop_category C
+		on I.item_category = C.item_category
+		where I.item_category = ${item_category}
+	</select>
+	<select id="main_select" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select I.item_name, I.item_price, I.item_main_photo, I.item_id
+		from shop_item I join shop_category C
+		on I.item_category = C.item_category
+		where I.item_category = ${item_category}
+	</select>
+	<select id="item_detail_view" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select item_name, item_price, item_id
+		from shop_item
+		where item_id = #{item_id}
+	</select>
+	<insert id="item_like" parameterType="shopController.ShopItemVo">
+		insert into shop_item_like values(seq_shop_like.nextval, #{mId}, #{item_id})
+	</insert> 
+	<delete id="item_like_delete" parameterType="shopController.ShopItemVo">
+		delete from shop_item_like where item_id = #{item_id}
+	</delete>
+	<!-- <select id="item_like_select" parameterType="String" resultType="shopController.ShopItemVo">
+		select I.item_name, I.item_price, I.item_main_photo, I.item_id, L.mId
+		from shop_item I join shop_item_like L
+		on I.item_id = L.item_id
+		where mId = #{_parameter}
+	</select> -->
+	<select id="item_option" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select N.option_name_values, O.option_name
+		from shop_option_name N join shop_item_option O
+		on N.option_name = O.option_name
+		where O.item_id = #{item_id} and O.option_name = ${option_name}
+	</select>
+	<select id="item_option_value" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select OD.option_value, O.option_name
+		from shop_item_option O join shop_item_option_detail OD
+		on O.item_option = OD.item_option
+		where O.item_id = #{item_id} and O.option_name = ${option_name}
+	</select>
+	<select id="item_detail_photo" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select I.item_id, P.item_photo, I.item_main_photo
+		from shop_photo P join shop_item I
+		on P.item_id = I.item_id
+		where I.item_id = #{item_id}
+	</select>
+</mapper>

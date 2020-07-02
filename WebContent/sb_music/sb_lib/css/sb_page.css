@@ -1,0 +1,90 @@
+@charset "UTF-8";
+#top_h{
+	margin-bottom: 20px;	
+	
+}
+
+#top_head{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#playAll{
+    
+    background-color: #FF1150;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    padding: 13px;
+	
+}
+
+#top100{
+	background-color:white;
+	
+	color: black;
+}
+
+#top100_list{
+	margin-bottom: 30px;
+}
+
+#info_body{
+	padding:100px;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 20px;
+}
+
+#info_name{
+	color:white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#info_artist{
+	color:white;
+	font-size: 15px;
+}
+#info_etc{
+	color:white;
+	text-shadow: 0 0 3px #5AF51D; 
+}
+#info_etc2{
+	color:white;
+	text-shadow: 0 0 3px #E53D3D;
+}
+
+#lylics{
+	color:white;
+	text-shadow: 0 0 3px #B373C8;
+}
+
+
+#movieDiv{
+	padding:100px;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 20px;
+	
+}
+
+#searchBody{
+	background-color: white;
+	
+}
+
+#search_top div{
+	font-weight: bold;
+}
+
+#top_header{
+	border-bottom: 1px solid #F2F2F2;
+	font-weight: bold;
+    padding-bottom: 10px;
+}
+#top_m:hover{
+	cursor: pointer;
+}
+
+#top_c{
+	padding-top: 30px;
+}

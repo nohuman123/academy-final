@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* blog_manage */
+#c_blog_manage {padding: 100px 0; background-color: #f3f5f7;}
+#c_blog_manage .col-xs-10 {padding: 0px 150px;}
+#c_blog_manage #c_manage_sub { display: inline-block; float: left; margin-right: 20px;}
+#c_blog_manage #c_manage_sub #c_subProfile img {width: 100%; height: 175px;}
+#c_blog_manage #c_manage_sub #c_subProfile img:hover {cursor: pointer;}
+#c_blog_manage #c_manage_sub #c_subProfile div {padding: 14px 19px 15px; border: 1px solid #E0E5EE; background-color: #fff;}
+#c_blog_manage #c_manage_sub #c_subProfile #c_subBtitle {font-weight: bold; margin-bottom: 1px; font-size: 16px;}
+#c_blog_manage #c_manage_sub #c_subProfile #c_subMid {font-size: 12px; color: #808080;}
+#c_blog_manage #c_manage_sub #c_bManage_menu {border: 1px solid #E0E5EE; background: #fff; margin-top: 10px;}
+#c_blog_manage #c_manage_sub #c_bManage_menu .c_Msubmenu {padding: 10px 0 10px 15px; font-size: 15px; font-weight: bold;}
+#c_blog_manage #c_manage_sub #c_bManage_menu .c_Msubmenu.home, .c_Msubmenu_group {border-bottom: 1px solid #eee; padding-bottom: 10px;}
+#c_blog_manage #c_manage_sub #c_bManage_menu .c_Msubmenu.home:hover {cursor: pointer; background-color: #eee}
+#c_blog_manage #c_manage_sub #c_bManage_menu .c_Msubmenu_item {padding-left: 35px;}
+#c_blog_manage #c_manage_sub #c_bManage_menu .c_Msubmenu_item:hover {cursor: pointer; text-decoration-line: underline;}
+#c_blog_manage #c_manage_sub #c_bManage_menu_s {display: none;}
+#c_blog_manage #c_manage_sub #c_bManage_menu_s #c_myblogSet_s img {width: 17%; border-radius: 5px;}
+#c_blog_manage #c_manage_sub #c_bManage_menu_s button {padding: 11px 0;}
+
+@media (max-width: 1400px) {
+	#c_blog_manage .col-xs-10 {padding: 0;}
+}
+@media (max-width: 1665px) {
+	#c_blog_manage #c_manage_sub #c_subProfile img {height: 175px;}
+}
+@media (max-width: 767px) {
+	#c_blog_manage #c_manage_sub #c_bManage_menu_s {display: block;}
+	#c_blog_manage #c_manage_sub #c_subProfile, #c_bManage_menu {display: none;}
+	#c_blog_manage .col-sm-9.col-md-10 {margin-top: 100px;}
+}
+
+/* myblog_manageSet (블로그 관리-블로그 설정)*/
+#c_myblog_manageSet, #c_myblog_dataDel {border: 1px solid #E0E5EE; background-color: #fff; padding: 25px 45px; height: 450px;}
+#c_myblog_manageSet #c_myblog_headerImg {width: 410px; height: 180px; margin: 20px auto; border-bottom: 1px solid #eee; background-color: #f5f5f5}
+#c_myblog_manageSet #c_myblog_headerImg img {width: 100%; height: 100%;}
+#c_myblog_manageSet #c_myblog_headerImg #c_btn_bHeaderImg {display: none;}
+#c_myblog_manageSet #c_myblog_headerImg #c_myblog_headerImg_add {border-radius: 30px; display: flow-root; position: relative; top: -113px; left: 186px; background-color: #77777782; border: none; outline: none;}
+#c_myblog_manageSet #c_myblog_headerImg #c_myblog_headerImg_rem {display: flow-root; position: relative; top: -223px; left: 385px; background-color: #77777782; padding: 0 6px; border: none; outline: none;}
+#c_myblog_manageSet #c_myblog_headerImg #c_myblog_headerImg_add:hover, #c_myblog_headerImg_rem:hover {background-color: #777;}
+#c_myblog_manageSet #c_myblog_setCon {padding-top:25px; border-top: 1px solid #eee;} 
+#c_myblog_manageSet #c_myblog_setCon input[type=text] {width: 100%; font-size: 16px; padding: 5px 10px; border: 1px solid #C5CDD7;}
+#c_myblog_manageSet #c_myblog_setCon input[type=text]:hover {border-color: #A5ADBA;} 
+#c_myblog_dataDel {height: 195px;}
+#c_myblog_dataDel div {font-size: 16px; line-height: 26px;}
+#c_myblog_setCon #c_myblog_btnSetCon, #c_myblog_btnDataDel {padding: 5px 28px; border-radius: 10px; border: none; background-color: black; color: white; font-size: 1.2em; float: right; margin-top: 30px}
+@media (max-width: 1550px) {
+	#c_myblog_dataDel {height: 220px;}
+}
+@media (max-width: 610px) {
+	#c_myblog_manageSet #c_myblog_headerImg {width: 330px;}
+	#c_myblog_manageSet #c_myblog_headerImg #c_myblog_headerImg_add {left: 140px;}
+	#c_myblog_manageSet #c_myblog_headerImg #c_myblog_headerImg_rem {left: 304px;}
+}
+@media (max-width: 544px) {
+	#c_myblog_dataDel {height: 250px;}
+}
+
+/* myblog_manageBrd (블로그 관리 - 글 관리) */
+#myblog_Mbrd h3, #myblog_Mbrd #c_Mbrd_count {display: inline-block;}
+#myblog_Mbrd #c_BrdWrite {float: right; border-radius: 10px; padding: 5px 28px; background-color: black; color: white; outline: none;}
+#myblog_Mbrd #c_MbrdSearch {border: 1px solid #E0E5EE; background: #fafbfd; padding: 15px 35px;}
+#myblog_Mbrd #c_MbrdSearch .dropdown.more {display: inline-block;}
+#myblog_Mbrd #c_MbrdSearch .dropdown.more .dropdown-toggle:hover {cursor: pointer;}
+#myblog_Mbrd #c_MbrdSearch #c_brdFindStr {border: none; outline: none; background: #fafbfd; margin-left: 54px; width: 75%;}
+#myblog_Mbrd #c_MbrdSearch #c_btnBrdFind {float: right; position: relative; top: -6px; border: none;}
+#myblog_Mbrd #c_MbrdList {border: 1px solid #E0E5EE; background: #fff; margin-top: 25px;}
+.c_MbrdItem {height: 115px; padding: 15px 35px; border-bottom: 1px solid #eee;}
+.c_MbrdItem .c_brdHeaderImg {float: left; width: 80px; height: 80px; margin-right: 25px;}
+.c_MbrdItem .c_brdHeaderImg img {width: 100%}
+.c_MbrdItem .c_Btitle {font-size: 18px; font-weight: bold; margin: 15px 0 5px 0;}
+.c_MbrdItem .c_Btitle:hover {cursor: pointer; text-decoration-line: underline;}
+.c_MbrdItem .c_Bcategory {color: #FF5544;}
+.c_MbrdItem .c_BmId, .c_BDate, .c_Bcmt{color: #808080; margin-left: 8px;}
+.c_MbrdItem br {display: none;}
+.c_MbrdItem .c_Mbrd_btnGroup {float: right; position: relative; top: -15px; display: none;}
+.c_MbrdItem .c_Mbrd_btnGroup button {border-radius: 3px; border: 1px solid #C5CDD7; background-color: #fff; padding: 3px 16px; font-weight: 600; margin-right: 5px; outline: none;}
+
+@media (max-width: 1544px) {
+	#myblog_Mbrd #c_MbrdSearch #c_brdFindStr {width: 70%;}
+}
+@media (max-width: 1035px) {
+	#myblog_Mbrd .col-xs-12 {margin-left: 20px;}
+}
+@media (max-width: 991px) {
+	#myblog_Mbrd .col-xs-12 {margin-left: 0;}
+	#myblog_Mbrd #c_MbrdSearch #c_brdFindStr {width: 60%;}
+}
+@media (max-width: 849px) {
+	#myblog_Mbrd #c_MbrdList .c_MbrdItem br {display: block;}
+	#myblog_Mbrd #c_MbrdSearch #c_brdFindStr {width: 48%;}
+}
+
+/* myblog_manageCmt (블로그 관리-댓글 관리) */
+#myblog_Mcmt h3, #myblog_Mcmt #c_Mcmt_count {display: inline-block;}
+#myblog_Mcmt #c_McmtSearch {border: 1px solid #E0E5EE; background: #fafbfd; padding: 15px 50px;}
+#myblog_Mcmt #c_McmtSearch .dropdown.more {display: inline-block;}
+#myblog_Mcmt #c_McmtSearch .dropdown.more .dropdown-toggle:hover {cursor: pointer;}
+#myblog_Mcmt #c_McmtSearch #c_cmtFindStr {border: none; outline: none; background: #fafbfd; margin-left: 54px; width: 75%;}
+#myblog_Mcmt #c_McmtSearch #c_btnCmtFind {float: right; position: relative; top: -6px; border: none;}
+#myblog_Mcmt #c_McmtList {border: 1px solid #E0E5EE; background: #fff; margin-top: 25px; line-height: 1.9em;}
+#myblog_Mcmt #c_McmtList .c_McmtItem {height: 115px; padding: 15px 35px; border-bottom: 1px solid #eee;}
+#myblog_Mcmt #c_McmtList .c_McmtItem .c_cmtMid {color: #FF5544; margin-right: 10px;}
+#myblog_Mcmt #c_McmtList .c_McmtItem .c_cmtDate, .c_McmtItem .c_brdTitle{color: #959595; margin-right: 10px;}
+#myblog_Mcmt #c_McmtList .c_McmtItem .c_cmtContent {font-weight: bold;}
+#myblog_Mcmt #c_McmtList .c_McmtItem .c_Mcmt_btnGroup {float: right; position: relative; top: -49px; display: none;}
+#myblog_Mcmt #c_McmtList .c_McmtItem .c_Mcmt_btnGroup button {border-radius: 3px; border: 1px solid #C5CDD7; background-color: #fff; padding: 3px 16px; font-weight: 600; margin-right: 5px; outline: none;}
+#myblog_Mcmt #myModal .modal-dialog {position: relative; top: 250px; border-radius: 4px;}
+#myblog_Mcmt #myModal .modal-dialog .modal-content {border-radius: 8px;}
+#myblog_Mcmt #myModal .modal-dialog .modal-header {background-color: #F0F3F7; border-radius: 8px;}
+#myblog_Mcmt #myModal .modal-dialog .modal-title {font-weight: 900; padding-left: 5px;}
+#myblog_Mcmt #myModal .modal-dialog .modal-body {padding: 25px 50px;}
+#myblog_Mcmt #myModal .modal-dialog #c_replUserImg {width: 40px; height: 40px; margin-right: 7px;}
+#myblog_Mcmt #myModal .modal-dialog #c_replMid {vertical-align: -webkit-baseline-middle; font-size: 16px; font-weight: 500;}
+#myblog_Mcmt #myModal .modal-dialog #c_replContent {margin-top: 15px; height: 160px; width: 100%;}
+#myblog_Mcmt #myModal .modal-dialog .modal-footer button {border-radius: 18px; width: 70px; outline: none;}
+#myblog_Mcmt #myModal .modal-dialog #c_btnReplInsert_Con {background-color: #ea531e; color: white; margin-right: 32px;}
+
+@media (max-width: 1559px) {
+	#myblog_Mcmt #c_McmtSearch #c_cmtFindStr {width: 70%;}
+}
+@media (max-width: 1500px) {
+	#myblog_Mcmt .col-xs-12 {margin-left: 20px;}
+}
+@media (max-width: 1023px) {
+	#myblog_Mcmt #c_McmtSearch #c_cmtFindStr {width: 65%;}
+}
+@media (max-width: 991px) {
+	#myblog_Mcmt #c_McmtSearch #c_cmtFindStr {width: 55%;}
+}
+@media (max-width: 849px) {
+	#myblog_Mbrd #c_MbrdList .c_MbrdItem br {display: block;}
+	#myblog_Mbrd #c_MbrdSearch #c_brdFindStr {width: 48%;}
+}
+
+/* myblog_manageCmt (블로그 관리- 방문 통계) */
+#myblog_Mstat #c_visitor {padding: 25px 30px; border: 1px solid #E0E5EE; background: #fff;}
+#myblog_Mstat #c_visitor .c_countVisitor {display: inline-block; padding-right: 24px;}
+#myblog_Mstat #c_visitor .c_countVisitor dt {font-size: 13px; color: #555;}
+#myblog_Mstat #c_visitor .c_countVisitor dd {padding: 5px 0 0; font-weight: bold; font-size: 20px;}
+#myblog_Mstat #c_visitorStat {padding: 25px 30px; border: 1px solid #E0E5EE; background: #fff; margin-top: 10px;}
+#myblog_Mstat #c_visitorStat #c_statDate {line-height: 32px; font-size: 20px; font-weight: 700}
+#myblog_Mstat #c_visitorStat .btn-group {float: right;}
+#myblog_Mstat #c_visitorStat .btn-group button {outline: none;}
+#myblog_Mstat #c_visitorStat #c_bestBrd {padding: 10px 0 0 11px; font-weight: bold;}
+
+
+
+
+
+
+
+
+ 

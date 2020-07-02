@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="membership">
+
+	<!-- insert -->
+	<insert id="register" parameterType="mybatis.MembershipVo">
+		insert into membership(mId, pwd, mName, birth, phone, email, address, mDate, gender) 
+		values(#{mId}, #{pwd}, #{mName}, #{birth}, #{phone}, #{email}, #{address}, sysdate, #{gender})
+	</insert>
+	
+	<insert id="sb_client" parameterType="mybatis.sb_clientVo">
+		insert into sb_client(id, pwd, pl_serial)
+		values (#{ID}, #{pwd}, pl_seq.nextval)
+	</insert>
+	
+	<insert id="sb_playlist" parameterType="mybatis.sb_clientVo">
+		insert into sb_playlist(pl_serial, mId)
+		values (pl_seq.currval, #{ID})
+	
+	</insert>
+
+	<!-- select -->
+	<select id="ck_id" parameterType="String" resultType="String">
+		select count(mId) from membership where mId = #{value} 
+	</select>
+	
+	<select id="login_id_ck" parameterType="String" resultType="int">
+		select count(mId) from membership where mId = #{value}
+	</select>
+	
+	<select id="login_pass_ck" parameterType="String" resultType="String">
+		select pwd from membership where mId = #{value}
+	</select>
+	
+	<select id="membership" parameterType="String" resultType="mybatis.MembershipVo">
+		select * from membership where mId = #{value}
+	</select>
+	
+	<select id="IsMembership" parameterType="String" resultType="java.sql.Timestamp">
+		select membership from sb_client where id = #{_parameter}
+	</select>
+	
+	<!-- update -->
+	
+	<update id="payMembership" parameterType="String">
+		update sb_client
+		set membership = sysdate + (INTERVAL '1' MONTH)
+		where ID = #{_parameter}
+		
+	</update>
+	
+	
+	<!-- 블로그 게시물 -->
+	<select id="blogSelect" parameterType="java.util.ArrayList" resultType="blogController.BlogBoardVo">
+		select B.* from (
+			select bNo, B.brdNo, mId, brdHeader, subject, content, brdDate from blog_board B join blog_tag T
+			on B.brdNo = T.brdNo 
+			where basicSet=0 and<foreach collection="array" item="item" index="index" separator="or">tContent like '%${item}%'</foreach>
+			order by hit desc) B 
+		where rownum &lt;=2
+	</select>
+
+	<!-- shop -->
+	<select id="main_shopItem_select" parameterType="shopController.ShopItemVo" resultType="shopController.ShopItemVo">
+		select I.item_name, I.item_price, I.item_main_photo, I.item_id, I.item_category
+		from shop_item I join shop_category C
+		on I.item_category = C.item_category
+		where I.item_category = ${item_category}
+	</select>
+</mapper>

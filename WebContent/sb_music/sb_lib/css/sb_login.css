@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+#logNav{
+	background-color: #B3EAA5;
+	padding-bottom: 10px;
+}
+
+
+#rootLogo{
+	position: relative;
+    top: 15px;
+}
+
+#goMain{
+	position: relative;
+    bottom: 13px;
+	border:none;
+	background-color: #ED7393;
+	color:white;
+	font-size:20px;
+	text-shadow: 0 0 3px black;
+}
+
+
+#mId{
+	width:400px;
+	height:40px;
+	border-radius: 5px;
+}
+
+#pwd{
+	width:400px;
+	height:40px;
+	border-radius: 5px;
+}
+
+#BtnLogin{
+    width: 100px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+	border-radius: 20px;	
+}
+
+#BtnRegister{
+	width: 100px;
+    background-color: #93F37C;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;	
+	border-radius: 20px;
+}
+
+
+#frm_login{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 500px;
+    border-radius: 54px;
+}
+
+
+#findId{
+	color:white;
+}
+
+/* 회원가입 */
+
+
+#frm_regisger span{
+	font-size: 20px;
+}
+
+
+	

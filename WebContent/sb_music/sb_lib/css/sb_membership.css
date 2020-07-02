@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#mem_body{
+	background-color: white;
+	
+}
+
+#mem_head{
+	background-image:url(../images/member_top.png);
+	background-repeat:none;
+	background-size:100%;
+	font-size: 50px;
+	color: white;
+    font-weight: bold;
+    text-shadow: 0 0 3px pink;
+	height: 185px;
+}
+
+#mem_neck{
+	font-size: 26px;
+	background-color: #F2F2F2;
+	border-bottom: solid 1px #BDBDBD;
+}
+
+#redtop{
+	
+    font-size: 24px;
+}
+
+#red{
+	color:#ff1150;
+}
+
+#mem_sel{
+	border: 1px solid #ff1150;
+	background-color:white;
+	width: 500px;
+	border-radius: 10px;
+}
+
+#mem_small{
+	font-size:8px;
+	color: #D8D8D8;
+}
+
+#mem_pay{
+	color: white;
+	background-color: #ff1150;
+	width: 450px;
+	border:none;
+}

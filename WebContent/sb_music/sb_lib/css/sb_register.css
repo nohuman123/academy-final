@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+input{
+	width:400px;
+	height: 40px;
+}
+
+span{
+	font-size: 25px;
+}
+
+select{
+	width:400px;
+	height: 40px;
+}
+
+option {
+	font-size: 15px;
+}
+
+#sm{
+	font-size::;px;
+	width: 400px;
+	height: 40px;
+}
+
+#login_s{
+	width: 400px;
+	height: 40px;
+}
+
+
+#checkId{
+	color:red;
+}
+
+.login_find{
+	font-size : 15px;
+}
+
+.login_find a{
+	text-decoration: none;
+}
+

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.pwFind span{
+	font-size: 25px;
+}
+
+.pwFind input{
+    width: 400px;
+    height: 40px;
+}
+
+.pw_find_tt .pw_find_top{
+	font-size: 30px;
+}
+
+.pwFind button{
+	margin-top: 5px;
+	width: 400px;
+    height: 40px;
+}

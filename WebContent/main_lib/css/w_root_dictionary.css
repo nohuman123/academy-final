@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+ul > li {
+	list-style: none;
+}
+
+#w_body{
+	position: relative;
+    left: 330px;
+    height: 107px;
+    
+}
+
+#w_header {
+    float: left;
+    width:5%;
+}
+
+#w_search{
+    float: left;
+    margin-left: 1%;
+    width:5%;
+    padding-top: 18px;
+
+}
+
+#w_searchbar{
+    float: left;
+    width:41%;
+}
+
+#w_searchbut{
+    float: left;
+    width:30%;
+}
+
+#w_btnSearch{
+	width: 83px;
+    height: 51px;
+	position: relative;
+    top: 24px;
+    font-size: 30px;
+}
+
+#w_bar{
+	margin-top: 16px;
+    width: 836px;
+    height: 63px;
+    border: solid 1px #1DDB16;
+    }
+#w_bar:hover{
+    color: green;
+    }    
+
+#w_border{
+    width: 1325px;
+    border-top: solid 3px black;
+    position: relative;
+    left: 300px;
+}
+#w_borderline{
+    width: 1320px;
+	border-top: solid 1px gray;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+#w_borderline > #w_dicmain{
+    width: 981px;
+    height: 280px;
+	border-top: solid 1px gray;
+	margin: 20px;
+	margin-top: 14px;
+    margin-bottom: 12px;
+    margin-left: 38px;
+}
+#w_dicmain > #w_img{
+	width: 127px;
+    margin-top: 16px;
+    height: 140px;
+}
+
+#w_tag{
+padding-left: 0px;
+	
+}
+
+#w_tag > li{
+margin: 10px;
+font-size: 1.1em;
+}
+
+#w_atag > li{
+	list-style: none;
+}
+#w_atag > li{
+	font-size: 2em;
+}
+
+#w_atag:link{	color: black; text-decoration: none; }
+#w_atag:visited { color: black; text-decoration: none;}
+#w_atag:hover { color: black; text-decoration: underline;}
+
+#w_ba{
+	bo
+	width: 247px;
+    height: 647px;
+    float: right;
+}
+

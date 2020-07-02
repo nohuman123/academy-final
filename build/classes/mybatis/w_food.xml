@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="food">
+<!--  <select id='foodcode' parameterType="String" resultType="java.util.List">
+ 	select foodcode
+ 	from w_food
+ 	where foodtype = #{type}
+ </select> -->
+ 
+ <select id='w_select' parameterType="String" resultType="w_foodcontroller.FoodVo">
+  select f.foodcode , f.foodname, f.foodprice, fi.foodcode , fi.foodorifile, fi.foodsysfile
+  from w_food f , w_food_image fi 
+  where f.foodtype=#{type} and f.foodcode = fi.foodcode
+ </select>
+ 
+  <select id="w_view" parameterType="Integer" resultType="w_foodcontroller.FoodVo">
+   select f.foodcode, f.foodname, f.foodprice, f.foodtype, fi.foodcode, fi.foodorifile, fi.foodsysfile
+   from w_food f , w_food_image fi
+   where f.foodcode = fi.foodcode
+   and f.foodcode =#{foodCode} 
+ </select>
+ 
+ <select id = "w_att_list" parameterType="Integer" resultType="w_foodcontroller.w_AttVo">
+  select foodCode, foodorifile, foodSysFile
+  from w_food_image
+  where foodCode = #{foodCode}
+ 
+ </select>
+ 
+ <update id = "w_update" parameterType="w_foodcontroller.FoodVo">
+   update w_food set foodname =#{foodName}, foodprice = #{foodPrice} , foodtype=#{foodType} 
+   where foodCode = #{foodCode}
+ </update>
+ 
+ <update id="w_att_update2" parameterType="w_foodcontroller.w_AttVo">
+   update w_food_image set foodoriFile = #{oriFile}, foodsysFile = #{sysFile} 
+   where foodCode = #{foodCode}
+ </update>
+ 
+ <!--  <delete id="w_att_delete" parameterType="w_foodcontroller.w_AttVo">
+   delete from w_food_image where = #{sysFile} or foodCode = #{foodCode} 
+ </delete> -->
+ 
+ <delete id = "w_delete" parameterType="w_foodcontroller.FoodVo">
+   delete from w_food
+   where foodCode = #{foodCode}
+ </delete> 
+ 
+
+ 
+ <insert id="w_insert" parameterType="w_foodcontroller.FoodVo">
+  insert into W_FOOD(foodCode,foodName,foodPrice,foodType) values(w_seq_code.nextval,#{foodName},#{foodPrice},#{foodType})
+ </insert>
+ 
+ <insert id="w_att_insert" parameterType="w_foodcontroller.w_AttVo">
+   insert into w_food_image(foodCode,foodOrifile,foodSysfile) values(w_seq_code.currval,#{oriFile},#{sysFile})
+ </insert>
+ 
+</mapper>

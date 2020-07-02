@@ -1,0 +1,174 @@
+@charset "UTF-8";
+#shop_myPage .a{
+	height: auto;
+}
+#shop_myPage .thumbnail {
+    position: relative;
+    width: 245%;
+    margin-top: 10%;
+    left: 70%;
+    text-align: center;
+}
+#shop_myPage .a .btn_modify{
+    border-style: none;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: darkgray;
+}
+#shop_myPage .b{
+	height: auto;
+}
+#shop_myPage #c{
+	height: auto;
+	border: 1px solid darkgray;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#shop_myPage #c .page-header{
+    margin: 0;
+    border-bottom-color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    border-bottom: 1px solid darkgray;
+}
+#shop_myPage #c #delivery_header{
+	margin-left: 1%;
+}
+#shop_myPage #c .btn_delivery_more{
+	font-size: smaller;
+    border-style: none;
+    font-weight: bold;
+    color: darkgray;
+    margin-left: 1%;
+}
+#shop_myPage .b #c .delivery_title {
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+    left: 25%;
+    margin: 1%;
+    margin-bottom: -0.5%;
+}
+#shop_myPage .b #c #item_name_title{
+	position: relative;
+}
+#shop_myPage .b #c #item_price_title{
+	position: relative;
+	left: 18%;
+}
+#shop_myPage .b #c #item_status_title{
+	position: relative;
+	left: 35%;
+}
+#shop_myPage .b #c #delivery{
+	border: 1px solid darkgray;
+	margin: 1%;
+	height: 80px;
+}
+#shop_myPage .b #c .item_photo{
+	position: relative;
+	width: 9%;
+	left: 1%;
+	margin-top: 0.5%;
+}
+#shop_myPage .b #c .delivery_information {
+    position: relative;
+    font-size: xx-large;
+    top: -65%;
+    left: 17%;
+}
+#shop_myPage .b #c #item_name{
+	position: relative;
+	left: 9%;
+}
+#shop_myPage .b #c #item_price{
+	position: relative;
+	left: 28%;
+}
+#shop_myPage .b #c #item_status{
+	position: relative;
+	left: 48%;
+}
+#shop_myPage #d{
+	height: auto;
+	border: 1px solid darkgray;
+}
+#shop_myPage #d .page-header{
+    margin: 0;
+    border-bottom-color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    border-bottom: 1px solid darkgray;
+}
+#shop_myPage #d #wishList_header{
+	margin-left: 1%;
+}
+#shop_myPage #d .btn_wishList_more{
+	font-size: smaller;
+    border-style: none;
+    font-weight: bold;
+    color: darkgray;
+    margin-left: 1%;
+}
+#shop_myPage #d .wishList_title {
+    position: relative;
+    font-size: xx-large;
+    font-weight: bold;
+    left: 25%;
+    margin: 1%;
+    margin-bottom: -0.5%;
+}
+#shop_myPage #d #item_name_title{
+	position: relative;
+}
+#shop_myPage #d #item_price_title{
+	position: relative;
+	left: 18%;
+}
+#shop_myPage #d #item_remove_title{
+	position: relative;
+	left: 35%;
+}
+#shop_myPage #d #wishList{
+	border: 1px solid darkgray;
+	margin: 1%;
+	height: 80px;
+}
+#shop_myPage #d .item_photo{
+	position: relative;
+	width: 9%;
+	left: 1%;
+	margin-top: 0.5%;
+}
+#shop_myPage #d .wishList_information {
+    position: relative;
+    font-size: xx-large;
+    top: -80%;
+    left: 17%;
+}
+#shop_myPage #d #item_name{
+	position: relative;
+	left: 9%;
+}
+#shop_myPage #d #item_price{
+	position: relative;
+	left: 29%;
+}
+#shop_myPage #d .btn_remove{
+	position: relative;
+	font-size: xx-large;
+	left: 50%;
+	border-style: none;
+	color: darkgray;
+}
+#shop_myPage #c .btn_delivery_more:hover, #shop_myPage #c .btn_delivery_more:focus, #shop_myPage #c .btn_delivery_more:visited, #shop_myPage #c .btn_delivery_more:active{
+	background-color: white;
+	border-style: none;
+	color: black;
+}
+#shop_myPage #d .btn_wishList_more:hover, #shop_myPage #d .btn_wishList_more:visited, #shop_myPage #d .btn_wishList_more:active{
+	background-color: white;
+	border-style: none;
+	color: black;
+}

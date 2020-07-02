@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="all">
+
+	<!-- select -->
+	<select id="email_ck" parameterType="String" resultType="int">
+		select count(*) from membership where eMail = #{value}
+	</select> 
+	
+	<select id="id_ck" parameterType="String" resultType="int">
+		select count(*) from membership where mId = #{value}
+	</select>
+	
+	<select id="phone_ck" parameterType="String" resultType="int">
+		select count(mId) from membership where phone = #{value}
+	</select>
+	
+	<select id="id_find" parameterType="String" resultType="String">
+		select mId from membership where phone = #{value}
+	</select>
+
+	<!-- update -->
+	<update id="pwd_change" parameterType="mybatis.MembershipVo">
+		update membership set pwd = #{pwd} where mId = #{mId}
+	</update>
+</mapper>	
